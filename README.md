@@ -20,6 +20,7 @@ pip freeze > requirements.txt
 ```python
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ```
+* Add whitenoise for static files to work in production (admin page)
 
 * [Make a Heroku account](https://signup.heroku.com/)
 
@@ -35,7 +36,7 @@ git commit -m "first commit"
 
 heroku login
 heroku create app_name
-git push heroku main
+git push heroku main  -or-  git push heroku master
 heroku open
 
 heroku run python manage.py migrate
@@ -50,5 +51,5 @@ heroku run python manage.py migrate
 ```shell
 git add .
 git commit -m "edit"
-git push heroku main
+git push heroku main  -or-  git push heroku master
 ```
